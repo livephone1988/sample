@@ -1028,14 +1028,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  * a simple convenience so we don't have to attach every token manually.
  */
 
-var token = document.head.querySelector('meta[name="csrf-token"]');
-
-if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
-} else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-}
-
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -43299,7 +43291,7 @@ if (false) {
 /* 42 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve '../fonts/bootstrap/glyphicons-halflings-regular.eot' in '/home/vagrant/Code/sample/resources/assets/sass'\n    at factoryCallback (/home/vagrant/Code/sample/node_modules/webpack/lib/Compilation.js:282:40)\n    at factory (/home/vagrant/Code/sample/node_modules/webpack/lib/NormalModuleFactory.js:237:20)\n    at resolver (/home/vagrant/Code/sample/node_modules/webpack/lib/NormalModuleFactory.js:60:20)\n    at asyncLib.parallel.e (/home/vagrant/Code/sample/node_modules/webpack/lib/NormalModuleFactory.js:127:20)\n    at /home/vagrant/Code/sample/node_modules/async/dist/async.js:3888:9\n    at /home/vagrant/Code/sample/node_modules/async/dist/async.js:473:16\n    at iteratorCallback (/home/vagrant/Code/sample/node_modules/async/dist/async.js:1062:13)\n    at /home/vagrant/Code/sample/node_modules/async/dist/async.js:969:16\n    at /home/vagrant/Code/sample/node_modules/async/dist/async.js:3885:13\n    at resolvers.normal.resolve (/home/vagrant/Code/sample/node_modules/webpack/lib/NormalModuleFactory.js:119:22)\n    at onError (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:65:10)\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/Code/sample/node_modules/tapable/lib/Tapable.js:252:11)\n    at /home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js:40:4\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at runAfter (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:158:4)\n    at innerCallback (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:146:3)\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/Code/sample/node_modules/tapable/lib/Tapable.js:252:11)\n    at innerCallback (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:144:11)\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/Code/sample/node_modules/tapable/lib/Tapable.js:249:35)\n    at resolver.doResolve.createInnerCallback (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:44:6)\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at afterInnerCallback (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/Resolver.js:168:10)\n    at loggingCallbackWrapper (/home/vagrant/Code/sample/node_modules/enhanced-resolve/lib/createInnerCallback.js:31:19)\n    at next (/home/vagrant/Code/sample/node_modules/tapable/lib/Tapable.js:252:11)");
 
 /***/ })
 /******/ ]);
